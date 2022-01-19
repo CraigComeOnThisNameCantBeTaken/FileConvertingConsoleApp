@@ -1,0 +1,10 @@
+﻿<Root>
+	<XElement>
+		<first>
+			<name>craig</name>
+		</first>
+		<second>
+			<name>freeman</name>
+		</second>
+	</XElement>
+</Root>
