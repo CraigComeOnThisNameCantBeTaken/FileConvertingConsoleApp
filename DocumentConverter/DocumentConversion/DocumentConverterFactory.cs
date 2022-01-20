@@ -8,7 +8,7 @@ namespace DocumentConverter.DocumentConversion
         {
             if (from == DocumentType.Csv && to == DocumentType.Xml)
                 return new CsvToXmlConverter();
-            else if (from == DocumentType.Csv && from != DocumentType.Json)
+            else if (from == DocumentType.Csv && to == DocumentType.Json)
                 return new CsvToJsonConverter();
 
             throw DocumentConversionException.InvalidTypeConversion(from, to);
