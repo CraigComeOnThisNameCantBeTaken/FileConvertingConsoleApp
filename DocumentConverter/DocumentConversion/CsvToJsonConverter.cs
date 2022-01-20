@@ -17,7 +17,7 @@ namespace DocumentConverter.DocumentConversion
                 .WithFirstLineHeader()
                 .Configure(c => c.NestedColumnSeparator = '_')
             )
-            using (var jsonWriter = new ChoJSONWriter(sb))
+            using (var jsonWriter = new ChoJSONWriter(sb).Configure(c => c.DefaultArrayHandling = false))
             {
                 jsonWriter.Write(csvReader);
             }
